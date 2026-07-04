@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base ────────────────────────────────────────────────────────────────── */
+* { -webkit-tap-highlight-color: transparent; }
+
+body {
+  @apply font-body text-ink bg-amber-50 antialiased;
+}
+
+/* ── Keyframes ───────────────────────────────────────────────────────────── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+@keyframes paw-bounce {
+  0%, 100% { transform: translateY(0)    rotate(-5deg); }
+  50%       { transform: translateY(-8px) rotate(5deg);  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0);   }
+  50%       { transform: translateY(-6px); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1);    }
+}
+
+/* ── Utility classes ─────────────────────────────────────────────────────── */
+.animate-fade-up   { animation: fade-up   0.5s ease forwards; }
+.animate-fade-in   { animation: fade-in   0.4s ease forwards; }
+.animate-scale-in  { animation: scale-in  0.3s ease forwards; }
+.animate-float     { animation: float     3s   ease-in-out infinite; }
+.animate-paw       { animation: paw-bounce 2s  ease-in-out infinite; }
+
+.skeleton {
+  background: linear-gradient(90deg, #fef3e2 25%, #fff8f0 50%, #fef3e2 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+/* ── Stagger helpers ─────────────────────────────────────────────────────── */
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.10s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.20s; }
+.stagger-5 { animation-delay: 0.25s; }
+.stagger-6 { animation-delay: 0.30s; }
+
+/* ── Smooth scroll ───────────────────────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+/* ── Custom scrollbar ────────────────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: #FFF8F0; }
+::-webkit-scrollbar-thumb { background: #E8873A; border-radius: 3px; }
+
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-body text-ink bg-amber-50;
+} */

@@ -1,0 +1,6 @@
+[2026-07-01T22:49:15.341Z] [INIT] Deep Copilot debug log started. file=c:\Users\The Eye Informatique\Desktop\puppy-adoption-platform\.deep-copilot\logs\session-2026-07-01T22-49-15-340Z.log
+[2026-07-01T22:49:15.341Z] [ACTIVATE] {"version":"0.43.1"}
+[2026-07-01T22:49:15.348Z] [PROVIDERS_LOADED] {"count":4,"ids":["anthropic","custom","deepseek","openai"]}
+[2026-07-01T22:49:15.349Z] [TERMINAL_MONITOR_STARTED] {}
+[2026-07-01T22:49:15.349Z] [STATUSBAR_REGISTERED] {"id":"deepseekAgent.statusBar"}
+[2026-07-01T22:49:15.353Z] [INLINE_COMPLETION_REGISTERED]
